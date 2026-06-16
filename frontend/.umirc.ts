@@ -3,11 +3,22 @@ import { defineConfig } from "umi";
 export default defineConfig({
   esbuildMinifyIIFE: true,
   routes: [
-    { path: "/", component: "index" },
-    { path: "/studentsList", component: "studentsList" },
-    { path: "/join", component: "join" },
+    {
+      path: '/',
+      wrappers: ['@/components/ProtectedRouteSect'],
+      routes: [
+        { path: "/", component: "@/pages/index" },
+        { path: "/studentsList", component: "@/pages/studentsList" },
+        //{ path: "/join", component: "@/pages/join" },
+
+      ]
+    },
+    { path: "/join", component: "Login/LoginPage", layout: false },
+    { path: "/*", component: "404" }
+
+
   ],
-  access:{},
+  access: {},
   request: {},
   initialState: {},
   model: {},

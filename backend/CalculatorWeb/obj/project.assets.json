@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Web-service\\web-1 — копия\\First\\CalculatorWeb\\CalculatorWeb.csproj",
+      "projectUniqueName": "E:\\VS\\UrFU-Microservices\\backend\\CalculatorWeb\\CalculatorWeb.csproj",
       "projectName": "CalculatorWeb",
-      "projectPath": "E:\\Web-service\\web-1 — копия\\First\\CalculatorWeb\\CalculatorWeb.csproj",
+      "projectPath": "E:\\VS\\UrFU-Microservices\\backend\\CalculatorWeb\\CalculatorWeb.csproj",
       "packagesPath": "C:\\Users\\Msk\\.nuget\\packages\\",
-      "outputPath": "E:\\Web-service\\web-1 — копия\\First\\CalculatorWeb\\obj\\",
+      "outputPath": "E:\\VS\\UrFU-Microservices\\backend\\CalculatorWeb\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

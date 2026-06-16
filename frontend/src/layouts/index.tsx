@@ -1,5 +1,5 @@
 import { Link, Outlet } from 'umi';
-//import styles from '../index.less';
+import  './index.css';
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
 import JoinLogicButton from '@/components/JoinLogicButton';
 
@@ -25,22 +25,23 @@ export default function LayoutPage() {
   return (
 
     <Layout>
-      <Header style={{ display: 'flex', alignItems: 'center' }}>
+      <Header style={{ display: 'flex', alignItems: 'center' }} className="main-header">
         <div className="demo-logo" />
         <Menu
-          theme="dark"
+          //theme="dark"
           mode="horizontal"
           defaultSelectedKeys={['2']}
           items={items}
-          style={{ flex: 1, minWidth: 0 }}
+          className="main-menu"
         />
         <JoinLogicButton/>
       </Header>
       <Content style={{ padding: '0 48px' }}>
-        <Breadcrumb
+        <div style={{marginTop: 25}}/>
+        {/* <Breadcrumb
           style={{ margin: '16px 0' }}
           items={[{ title: 'Home' }, { title: 'List' }, { title: 'App' }]}
-        />
+        /> */}
         <div
           // style={{
           //   background: colorBgContainer,

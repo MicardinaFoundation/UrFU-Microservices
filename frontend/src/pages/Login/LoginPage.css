@@ -1,0 +1,245 @@
+:root {
+  /* Базовый акцентный цвет (интенсивный оранжевый) */
+  --accent-base: #3088d9;
+  
+  /* Создаем гармоничные оттенки с помощью color-mix в пространстве oklch */
+  /* Светлый оттенок для градиентов (смешиваем базовый с белым) */
+  --accent-light: color-mix(in oklch, var(--accent-base), #fff 25%);
+  /* Темный оттенок для ховеров и акцентов (смешиваем с черным) */
+  --accent-dark: color-mix(in oklch, var(--accent-base), #000 15%);
+  
+  --color-dark-blue: #1c4b75;
+  --color-mid-blue: #237fae;
+  --color-cyan: #43b3cf;
+  --color-teal: #4ba69d;
+  --color-green: #59b657;
+  --color-lime: #84d14e;
+  --color-bright-white: rgba(255, 255, 255, 0.75);
+}
+
+body {
+  margin: 0;
+}
+
+
+.formBox {
+  width: 600px; /* Каждая форма занимает ровно ширину контейнера */
+  height: 100%;
+  padding: 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sliderWrapper {
+  display: flex;
+  width: 1200px; /* Ширина двух форм (600px * 2) */
+  height: 100%;
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1); 
+
+}
+.showRegister {
+  transform: translateX(-600px); 
+}
+
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(2px) brightness(0.5);
+  z-index: 1;
+}
+
+.login-background {
+    background: radial-gradient(circle at 10% 20%, rgb(232, 89, 12) 100%, transparent 40%),
+}
+
+.login-card {
+    position: relative;
+    overflow: hidden;
+  width: 600px;
+  background: rgba(46, 50, 57, 0.1) !important; /* Slate 800 with glass opacity */
+  backdrop-filter: blur(10px) brightness(0.7);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  border-radius: 16px !important;
+  padding: -24px !important;
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.login-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 86px;
+  height: 86px;
+  /* Градиент теперь плавно переливается в пространстве oklch */
+  background: linear-gradient(135deg in oklch, var(--accent-light) 0%, var(--accent-base) 100%);
+  border-radius: 14px;
+  color: white;
+  font-size: 28px;
+  box-shadow: 0 8px 16px color-mix(in oklch, var(--accent-base) 30%, transparent);
+  margin-bottom: 16px;
+}
+
+.login-title {
+  color: #f8fafc !important; /* Slate 50 */
+  margin-bottom: 4px !important;
+  font-weight: 700 !important;
+}
+
+.login-subtitle {
+  color: #94a3b8; /* Slate 400 */
+  display: block;
+}
+
+/* Ant Design styles overrides */
+.login-card .ant-input-affix-wrapper {
+  background-color: rgba(15, 23, 42, 0.6) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  color: #f8fafc !important;
+}
+
+.login-card .ant-input-affix-wrapper:hover,
+.login-card .ant-input-affix-wrapper-focused {
+  border-color: var(--accent-base) !important;
+}
+
+.login-card .ant-input {
+  background: transparent !important;
+  color: #f8fafc !important;
+}
+
+.login-card .ant-input::placeholder {
+  color: #64748b !important;
+}
+
+.login-card .ant-input-prefix {
+  color: #64748b !important;
+  margin-right: 8px;
+}
+
+.login-form-button {
+  /* Плавное смешивание цветов прямо внутри градиента кнопки */
+  background: linear-gradient(90deg in oklch, var(--accent-light) 0%, var(--accent-base) 100%) !important;
+  border: none !important;
+  height: 44px !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  box-shadow: 0 4px 12px color-mix(in oklch, var(--accent-base) 30%, transparent) !important;
+  transition: all 0.3s ease !important;
+}
+
+.login-form-button:hover {
+  background: linear-gradient(90deg in oklch, var(--accent-base) 0%, var(--accent-dark) 100%) !important;
+  box-shadow: 0 6px 16px color-mix(in oklch, var(--accent-base) 40%, transparent) !important;
+}
+
+.login-footer {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.login-link {
+  color: var(--accent-light) !important;
+  font-weight: 500;
+}
+
+.login-link:hover {
+  color: var(--accent-base) !important;
+  text-decoration: underline;
+}
+
+
+
+.vista-container {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to top, #103254 0%, #1c527f 30%, #3ca4c1 60%, #4da57c 85%, #6cbc4f 100%);
+  overflow: hidden;
+}
+
+.vista-bg-rays {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: 
+    linear-gradient(90deg, transparent 20%, rgba(255,255,255,0.08) 25%, transparent 30%),
+    linear-gradient(90deg, transparent 40%, rgba(255,255,255,0.12) 48%, transparent 55%),
+    linear-gradient(90deg, transparent 65%, rgba(255,255,255,0.07) 70%, transparent 80%),
+    linear-gradient(90deg, transparent 10%, rgba(255,255,255,0.05) 15%, transparent 25%);
+  filter: blur(15px);
+}
+
+
+.vista-floor {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 18%; 
+  background: linear-gradient(to bottom, #24587c 0%, #3e8ca7 100%);
+  box-shadow: 0 -20px 40px rgba(255, 255, 255, 0.2);
+  opacity: 0.9;
+}
+
+.vista-floor::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: radial-gradient(circle at 15% 0%, rgba(255,255,255,0.25) 0%, transparent 50%);
+  mix-blend-mode: screen;
+}
+
+.vista-floor::after {
+  content: '';
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 2px; 
+  
+  background: linear-gradient(to right, 
+    rgba(255, 255, 255, 0) 0%, 
+    rgba(255, 255, 255, 0.3) 10%, 
+    rgba(255, 255, 255, 0.9) 50%, 
+    rgba(255, 255, 255, 0.3) 90%, 
+    rgba(255, 255, 255, 0) 100%
+  );
+  
+  background-size: 20% 100%;
+  background-repeat: no-repeat;
+  
+  mix-blend-mode: overlay;
+  
+  animation: vista-loading 3s steps(15) infinite;
+}
+
+@keyframes vista-loading {
+  0% {
+    background-position: -25% 0;
+  }
+  100% {
+    background-position: 125% 0;
+  }
+}

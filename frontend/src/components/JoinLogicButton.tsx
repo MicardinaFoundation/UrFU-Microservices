@@ -7,10 +7,10 @@ export default function (props: any) {
       refresh();
   
     }, [])
-    if (localStorage.getItem("token")) {
+    if (localStorage.getItem("auth_token")) {
         const userName = localStorage.getItem("userName") != null ? localStorage.getItem("userName") : "Anon";
         const exitJoin = () => {
-            localStorage.removeItem("token");
+            localStorage.removeItem("auth_token");
             localStorage.removeItem("userName");
             localStorage.removeItem("AD3E7S%vCgk");
             //refresh();
@@ -19,10 +19,9 @@ export default function (props: any) {
         
         return (
             <>
-                <span
-                style={{color: 'white'}}>
+                <span>
 
-                    {userName} <a onClick={exitJoin}>Выйти</a>
+                    {userName} | <a onClick={exitJoin}>Выйти</a>
                 </span>
             </>
         );

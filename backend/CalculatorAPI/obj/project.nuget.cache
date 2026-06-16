@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "axncEN4RqIA=",
+  "dgSpecHash": "uloQMRkewoM=",
   "success": true,
-  "projectFilePath": "E:\\Web-service\\web-1 — копия\\First\\CalculatorAPI\\CalculatorAPI.csproj",
+  "projectFilePath": "E:\\VS\\UrFU-Microservices\\backend\\CalculatorAPI\\CalculatorAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Msk\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Msk\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
@@ -68,10 +68,14 @@
   ],
   "logs": [
     {
-      "code": "NU1900",
+      "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Произошла ошибка при получении данных уязвимости пакета: Не удалось загрузить индекс службы для источника https://api.nuget.org/v3/index.json."
+      "message": "У пакета \"AutoMapper\" 13.0.1 есть известная уязвимость https://github.com/advisories/GHSA-rvv3-g6hj-g44x (уровень серьезности: высокий)",
+      "libraryId": "AutoMapper",
+      "targetGraphs": [
+        "net8.0"
+      ]
     }
   ]
 }

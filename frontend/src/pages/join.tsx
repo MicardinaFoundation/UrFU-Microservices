@@ -22,7 +22,7 @@ const DocsPage = () => {
   const handleLogin = (data: any) => {
     request('api/auth', { data, method: 'POST' }).then((response: any) => {
       console.log(response);
-      localStorage.setItem('token', response.token);
+      localStorage.setItem('auth_token', response.token);
       localStorage.setItem('TAD3E7S%vCgk', response.userIndex);
       localStorage.setItem('userName', response.uName);
       refresh();
