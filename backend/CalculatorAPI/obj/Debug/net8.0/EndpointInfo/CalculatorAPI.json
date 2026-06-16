@@ -1,0 +1,1037 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "My API",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/Auth": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AuthRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AuthRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AuthRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserAddDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserAddDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserAddDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Calculator/Solve": {
+      "post": {
+        "tags": [
+          "Calculator"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DataInputModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DataInputModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DataInputModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Calculator/PutIn{userid}": {
+      "put": {
+        "tags": [
+          "Calculator"
+        ],
+        "parameters": [
+          {
+            "name": "userid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DataInputModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DataInputModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DataInputModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Calculator/Save": {
+      "post": {
+        "tags": [
+          "Calculator"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VariantAddDtoModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VariantAddDtoModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/VariantAddDtoModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Calculator/Edit": {
+      "patch": {
+        "tags": [
+          "Calculator"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VariantEditDtoModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VariantEditDtoModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/VariantEditDtoModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Calculator/LoadVariant": {
+      "post": {
+        "tags": [
+          "Calculator"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VariantLoadDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VariantLoadDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/VariantLoadDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Calculator/LoadSolveVariant": {
+      "post": {
+        "tags": [
+          "Calculator"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VariantLoadDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VariantLoadDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/VariantLoadDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Calculator/DuplicateVariant": {
+      "post": {
+        "tags": [
+          "Calculator"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VariantLoadDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VariantLoadDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/VariantLoadDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Calculator/LoadListVariant{id}": {
+      "post": {
+        "tags": [
+          "Calculator"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Calculator": {
+      "delete": {
+        "tags": [
+          "Calculator"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VariantDeleteDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VariantDeleteDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/VariantDeleteDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AuthRequest": {
+        "type": "object",
+        "properties": {
+          "login": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DataInputModel": {
+        "type": "object",
+        "properties": {
+          "co2": {
+            "type": "number",
+            "format": "double",
+            "default": 10
+          },
+          "h2o": {
+            "type": "number",
+            "format": "double",
+            "default": 15
+          },
+          "n2": {
+            "type": "number",
+            "format": "double",
+            "default": 70
+          },
+          "o2": {
+            "type": "number",
+            "format": "double",
+            "default": 5
+          },
+          "gaz_used": {
+            "type": "number",
+            "format": "double",
+            "default": 40000
+          },
+          "presure_putten_par": {
+            "type": "number",
+            "format": "double",
+            "default": 1,8
+          },
+          "temperature_eaten_water": {
+            "type": "number",
+            "format": "double",
+            "default": 100
+          },
+          "temperature_arrive_smoke": {
+            "type": "number",
+            "format": "double",
+            "default": 375
+          },
+          "temperature_of_incoming_gases": {
+            "type": "number",
+            "format": "double"
+          },
+          "popravka_na_chair_radov_pipes": {
+            "type": "number",
+            "format": "double"
+          },
+          "temperature_of_outcoming_gases": {
+            "type": "number",
+            "format": "double"
+          },
+          "cross_sectional_area_for_passage_of_combustion_products": {
+            "type": "number",
+            "format": "double"
+          },
+          "estimated_heating_surface_area": {
+            "type": "number",
+            "format": "double"
+          },
+          "pipe_diametr": {
+            "type": "number",
+            "format": "double"
+          },
+          "transverse_pitch_of_pipe": {
+            "type": "number",
+            "format": "double"
+          },
+          "longitudinal_pitch_of_pipes": {
+            "type": "number",
+            "format": "double"
+          },
+          "number_of_pipe_rows": {
+            "type": "number",
+            "format": "double"
+          },
+          "proportion_of_intake_air": {
+            "type": "number",
+            "format": "double",
+            "default": 0,1
+          },
+          "thermal_resistance_of_deposits_on_pipes": {
+            "type": "number",
+            "format": "double",
+            "default": 0
+          },
+          "the_emission_coefficient_of_a_completely_black_body": {
+            "type": "number",
+            "format": "double",
+            "default": 5,67
+          },
+          "the_degree_of_blackness_of_the_walls_of_the_tube_package": {
+            "type": "number",
+            "format": "double",
+            "default": 0,8
+          },
+          "heat_preservation_coefficient": {
+            "type": "number",
+            "format": "double",
+            "default": 0,9
+          },
+          "purge_n": {
+            "type": "number",
+            "format": "double",
+            "default": 10
+          },
+          "temperature_of_the_the_heated_medium_at_The_inlet": {
+            "type": "number",
+            "format": "double"
+          },
+          "temperature_of_the_the_heated_medium_at_The_outlet": {
+            "type": "number",
+            "format": "double"
+          },
+          "temperature_of_incoming_gases_1": {
+            "type": "number",
+            "format": "double",
+            "default": 800
+          },
+          "popravka_na_chair_radov_pipes_1": {
+            "type": "number",
+            "format": "double",
+            "default": 0,98
+          },
+          "temperature_of_outcoming_gases_1": {
+            "type": "number",
+            "format": "double",
+            "default": 704
+          },
+          "cross_sectional_area_for_passage_of_combustion_products_1": {
+            "type": "number",
+            "format": "double",
+            "default": 4,32
+          },
+          "estimated_heating_surface_area_1": {
+            "type": "number",
+            "format": "double",
+            "default": 30
+          },
+          "pipe_diametr_1": {
+            "type": "number",
+            "format": "double",
+            "default": 0,032
+          },
+          "transverse_pitch_of_pipe_1": {
+            "type": "number",
+            "format": "double",
+            "default": 0,172
+          },
+          "longitudinal_pitch_of_pipes_1": {
+            "type": "number",
+            "format": "double",
+            "default": 0,07
+          },
+          "number_of_pipe_rows_1": {
+            "type": "number",
+            "format": "double",
+            "default": 12
+          },
+          "temperature_of_the_the_heated_medium_at_The_inlet_1": {
+            "type": "number",
+            "format": "double",
+            "default": 206
+          },
+          "temperature_of_the_the_heated_medium_at_The_outlet_1": {
+            "type": "number",
+            "format": "double",
+            "default": 206
+          },
+          "popravka_na_chair_radov_pipes_2": {
+            "type": "number",
+            "format": "double",
+            "default": 0,95
+          },
+          "temperature_of_outcoming_gases_2": {
+            "type": "number",
+            "format": "double",
+            "default": 628
+          },
+          "cross_sectional_area_for_passage_of_combustion_products_2": {
+            "type": "number",
+            "format": "double",
+            "default": 3,17
+          },
+          "estimated_heating_surface_area_2": {
+            "type": "number",
+            "format": "double",
+            "default": 43,5
+          },
+          "pipe_diametr_2": {
+            "type": "number",
+            "format": "double",
+            "default": 0,032
+          },
+          "transverse_pitch_of_pipe_2": {
+            "type": "number",
+            "format": "double",
+            "default": 0,086
+          },
+          "longitudinal_pitch_of_pipes_2": {
+            "type": "number",
+            "format": "double",
+            "default": 0,07
+          },
+          "number_of_pipe_rows_2": {
+            "type": "number",
+            "format": "double",
+            "default": 8
+          },
+          "temperature_of_the_the_heated_medium_at_The_inlet_2": {
+            "type": "number",
+            "format": "double",
+            "default": 206
+          },
+          "temperature_of_the_the_heated_medium_at_The_outlet_2": {
+            "type": "number",
+            "format": "double",
+            "default": 375
+          },
+          "popravka_na_chair_radov_pipes_3": {
+            "type": "number",
+            "format": "double",
+            "default": 1
+          },
+          "temperature_of_outcoming_gases_3": {
+            "type": "number",
+            "format": "double",
+            "default": 310,6
+          },
+          "cross_sectional_area_for_passage_of_combustion_products_3": {
+            "type": "number",
+            "format": "double",
+            "default": 9,51
+          },
+          "estimated_heating_surface_area_3": {
+            "type": "number",
+            "format": "double",
+            "default": 432
+          },
+          "pipe_diametr_3": {
+            "type": "number",
+            "format": "double",
+            "default": 0,032
+          },
+          "transverse_pitch_of_pipe_3": {
+            "type": "number",
+            "format": "double",
+            "default": 0,086
+          },
+          "longitudinal_pitch_of_pipes_3": {
+            "type": "number",
+            "format": "double",
+            "default": 0,07
+          },
+          "number_of_pipe_rows_3": {
+            "type": "number",
+            "format": "double",
+            "default": 22
+          },
+          "temperature_of_the_the_heated_medium_at_The_inlet_3": {
+            "type": "number",
+            "format": "double",
+            "default": 206
+          },
+          "temperature_of_the_the_heated_medium_at_The_outlet_3": {
+            "type": "number",
+            "format": "double",
+            "default": 206
+          },
+          "popravka_na_chair_radov_pipes_4": {
+            "type": "number",
+            "format": "double",
+            "default": 0,99
+          },
+          "temperature_of_outcoming_gases_4": {
+            "type": "number",
+            "format": "double",
+            "default": 231
+          },
+          "cross_sectional_area_for_passage_of_combustion_products_4": {
+            "type": "number",
+            "format": "double",
+            "default": 3,18
+          },
+          "estimated_heating_surface_area_4": {
+            "type": "number",
+            "format": "double",
+            "default": 185
+          },
+          "pipe_diametr_4": {
+            "type": "number",
+            "format": "double",
+            "default": 0,032
+          },
+          "transverse_pitch_of_pipe_4": {
+            "type": "number",
+            "format": "double",
+            "default": 0,09
+          },
+          "longitudinal_pitch_of_pipes_4": {
+            "type": "number",
+            "format": "double",
+            "default": 0,07
+          },
+          "number_of_pipe_rows_4": {
+            "type": "number",
+            "format": "double",
+            "default": 20
+          },
+          "temperature_of_the_the_heated_medium_at_The_inlet_4": {
+            "type": "number",
+            "format": "double",
+            "default": 100
+          },
+          "temperature_of_the_the_heated_medium_at_The_outlet_4": {
+            "type": "number",
+            "format": "double",
+            "default": 206
+          }
+        },
+        "additionalProperties": false
+      },
+      "UserAddDto": {
+        "type": "object",
+        "properties": {
+          "uName": {
+            "type": "string",
+            "nullable": true
+          },
+          "login": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "VariantAddDtoModel": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "desc": {
+            "type": "string",
+            "nullable": true
+          },
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "modela": {
+            "$ref": "#/components/schemas/modelVal"
+          }
+        },
+        "additionalProperties": false
+      },
+      "VariantDeleteDto": {
+        "type": "object",
+        "properties": {
+          "variantId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "VariantEditDtoModel": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "desc": {
+            "type": "string",
+            "nullable": true
+          },
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "variantId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "modela": {
+            "$ref": "#/components/schemas/modelVal"
+          }
+        },
+        "additionalProperties": false
+      },
+      "VariantLoadDto": {
+        "type": "object",
+        "properties": {
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "variantId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "modelVal": {
+        "type": "object",
+        "properties": {
+          "co2": {
+            "type": "number",
+            "format": "double"
+          },
+          "h2o": {
+            "type": "number",
+            "format": "double"
+          },
+          "n2": {
+            "type": "number",
+            "format": "double"
+          },
+          "o2": {
+            "type": "number",
+            "format": "double"
+          },
+          "gaz_used": {
+            "type": "number",
+            "format": "double"
+          },
+          "presure_putten_par": {
+            "type": "number",
+            "format": "double"
+          },
+          "temperature_eaten_water": {
+            "type": "number",
+            "format": "double"
+          },
+          "temperature_arrive_smoke": {
+            "type": "number",
+            "format": "double"
+          },
+          "temperature_of_incoming_gases_1": {
+            "type": "number",
+            "format": "double"
+          },
+          "popravka_na_chair_radov_pipes_1": {
+            "type": "number",
+            "format": "double"
+          },
+          "temperature_of_outcoming_gases_1": {
+            "type": "number",
+            "format": "double"
+          },
+          "cross_sectional_area_for_passage_of_combustion_products_1": {
+            "type": "number",
+            "format": "double"
+          },
+          "estimated_heating_surface_area_1": {
+            "type": "number",
+            "format": "double"
+          },
+          "pipe_diametr_1": {
+            "type": "number",
+            "format": "double"
+          },
+          "transverse_pitch_of_pipe_1": {
+            "type": "number",
+            "format": "double"
+          },
+          "longitudinal_pitch_of_pipes_1": {
+            "type": "number",
+            "format": "double"
+          },
+          "number_of_pipe_rows_1": {
+            "type": "number",
+            "format": "double"
+          },
+          "temperature_of_the_the_heated_medium_at_The_inlet_1": {
+            "type": "number",
+            "format": "double"
+          },
+          "temperature_of_the_the_heated_medium_at_The_outlet_1": {
+            "type": "number",
+            "format": "double"
+          },
+          "temperature_of_incoming_gases_2": {
+            "type": "number",
+            "format": "double"
+          },
+          "popravka_na_chair_radov_pipes_2": {
+            "type": "number",
+            "format": "double"
+          },
+          "temperature_of_outcoming_gases_2": {
+            "type": "number",
+            "format": "double"
+          },
+          "cross_sectional_area_for_passage_of_combustion_products_2": {
+            "type": "number",
+            "format": "double"
+          },
+          "estimated_heating_surface_area_2": {
+            "type": "number",
+            "format": "double"
+          },
+          "pipe_diametr_2": {
+            "type": "number",
+            "format": "double"
+          },
+          "transverse_pitch_of_pipe_2": {
+            "type": "number",
+            "format": "double"
+          },
+          "longitudinal_pitch_of_pipes_2": {
+            "type": "number",
+            "format": "double"
+          },
+          "number_of_pipe_rows_2": {
+            "type": "number",
+            "format": "double"
+          },
+          "temperature_of_the_the_heated_medium_at_The_inlet_2": {
+            "type": "number",
+            "format": "double"
+          },
+          "temperature_of_the_the_heated_medium_at_The_outlet_2": {
+            "type": "number",
+            "format": "double"
+          },
+          "temperature_of_incoming_gases_3": {
+            "type": "number",
+            "format": "double"
+          },
+          "popravka_na_chair_radov_pipes_3": {
+            "type": "number",
+            "format": "double"
+          },
+          "temperature_of_outcoming_gases_3": {
+            "type": "number",
+            "format": "double"
+          },
+          "cross_sectional_area_for_passage_of_combustion_products_3": {
+            "type": "number",
+            "format": "double"
+          },
+          "estimated_heating_surface_area_3": {
+            "type": "number",
+            "format": "double"
+          },
+          "pipe_diametr_3": {
+            "type": "number",
+            "format": "double"
+          },
+          "transverse_pitch_of_pipe_3": {
+            "type": "number",
+            "format": "double"
+          },
+          "longitudinal_pitch_of_pipes_3": {
+            "type": "number",
+            "format": "double"
+          },
+          "number_of_pipe_rows_3": {
+            "type": "number",
+            "format": "double"
+          },
+          "temperature_of_the_the_heated_medium_at_The_inlet_3": {
+            "type": "number",
+            "format": "double"
+          },
+          "temperature_of_the_the_heated_medium_at_The_outlet_3": {
+            "type": "number",
+            "format": "double"
+          },
+          "temperature_of_incoming_gases_4": {
+            "type": "number",
+            "format": "double"
+          },
+          "popravka_na_chair_radov_pipes_4": {
+            "type": "number",
+            "format": "double"
+          },
+          "temperature_of_outcoming_gases_4": {
+            "type": "number",
+            "format": "double"
+          },
+          "cross_sectional_area_for_passage_of_combustion_products_4": {
+            "type": "number",
+            "format": "double"
+          },
+          "estimated_heating_surface_area_4": {
+            "type": "number",
+            "format": "double"
+          },
+          "pipe_diametr_4": {
+            "type": "number",
+            "format": "double"
+          },
+          "transverse_pitch_of_pipe_4": {
+            "type": "number",
+            "format": "double"
+          },
+          "longitudinal_pitch_of_pipes_4": {
+            "type": "number",
+            "format": "double"
+          },
+          "number_of_pipe_rows_4": {
+            "type": "number",
+            "format": "double"
+          },
+          "temperature_of_the_the_heated_medium_at_The_inlet_4": {
+            "type": "number",
+            "format": "double"
+          },
+          "temperature_of_the_the_heated_medium_at_The_outlet_4": {
+            "type": "number",
+            "format": "double"
+          },
+          "proportion_of_intake_air": {
+            "type": "number",
+            "format": "double"
+          },
+          "thermal_resistance_of_deposits_on_pipes": {
+            "type": "number",
+            "format": "double"
+          },
+          "the_emission_coefficient_of_a_completely_black_body": {
+            "type": "number",
+            "format": "double"
+          },
+          "the_degree_of_blackness_of_the_walls_of_the_tube_package": {
+            "type": "number",
+            "format": "double"
+          },
+          "heat_preservation_coefficient": {
+            "type": "number",
+            "format": "double"
+          },
+          "purge_n": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "apiKey",
+        "description": "Please insert JWT with Bearer into field",
+        "name": "Authorization",
+        "in": "header"
+      }
+    }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
+}

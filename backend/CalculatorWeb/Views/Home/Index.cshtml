@@ -1,0 +1,97 @@
+﻿@model CalculatorAPI.Data.Data
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-start">
+    <h1 class="display-4">Welcome around!</h1>
+    <p>Today fonded @Model.Variant.Count values<br /><br /><br /></p>
+    <button class="btn btn-success" onclick="location.href = '/Home/Add'">Add</button>
+    <button class="btn btn-danger" onclick="location.href = '/Home/Cathegory'">Cathegory return</button>
+    <br />
+    <form method="post" class="row row-cols-lg-auto g-3 align-items-center">
+        <div class="col-auto">
+            <select class="form-select" title="Contact group type" id="floatingSelect" name="name">
+                <option value="-1" selected>All Group</option>
+                @*                     <option value="1">One</option>*@
+                @{
+                    var a = Model;
+                    List<string> newData = Model.Cathegory
+                    .Select(p => p.Cathegories)
+                    .Distinct()
+                    .ToList();
+                    if(Model.Cathegory.Count > 0)
+                    {
+                        if (Model.Cathegory.Count > 1)
+                        {
+                            foreach (var data in newData)
+                            {
+                                <option value="@data">@data</option>
+                            }
+                            // for(int i = 0; i < Model.ToArray().Length; i++)
+                            // {
+                            //     <option value="@newData[i]">@newData[i]</option>
+                            // }
+                        }
+                        else
+                        {
+                            <option value="@newData[0]">@newData[0]</option>
+                        }
+                    }
+                }
+            </select>
+        </div>
+        <div class="col-auto">
+            <input type="text" name="NamsName" value="" class="col-auto" title="Contact Name"/>
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-primary">Search</button>
+        </div>
+    </form>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Group</th>
+                <th>Tel</th>
+                <th>Description</th>
+                <th>Date add</th>
+                <th>Date upd</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var variant in Model.Variant)
+            {
+                <tr>
+                    <td>@variant.Id</td>
+                    <td>@(!string.IsNullOrEmpty(variant.Name) ? variant.Name : "<NULL>")</td>
+                    <td>@(!string.IsNullOrEmpty(variant.NamsName) ? variant.NamsName : "<NULL>")</td>
+                    <td>@(variant.GroupId < Model.Cathegory.Count ? Model.Cathegory[variant.GroupId].Cathegories : $"<NULL GROUP FOR THIS ID> | <ID = {variant.GroupId}> <{variant.Name}>")</td>
+                    <td>@(!string.IsNullOrEmpty(variant.Numb.ToString()) ? variant.Numb : "<NULL>")</td>
+                    <td>@(!string.IsNullOrEmpty(variant.Description) ? variant.Description : "<NULL>")</td>
+                    <td>@(!string.IsNullOrEmpty(variant.CreatedAt.ToString()) ? variant.CreatedAt == DateTime.MinValue ? "NO ADD" : variant.CreatedAt : "<NULL>")</td>
+                    <td>@(!string.IsNullOrEmpty(variant.UpdatedAt.ToString()) ? variant.UpdatedAt == DateTime.MinValue ? "NO UPDATE" : variant.UpdatedAt : "<NULL>")</td>
+                    <td><a href="/home/edit/@variant.Id">edit</a> <a href="/home/delete/@variant.Id">delete</a></td>
+                </tr>
+            }
+        </tbody>
+</table>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+    <br />
+    <br />
+    <a class="btn btn-danger">Clear DB</a>
+</div>

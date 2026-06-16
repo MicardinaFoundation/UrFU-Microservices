@@ -1,0 +1,183 @@
+[
+  {
+    "ContainingType": "CalculatorAPI.Controllers.AuthController",
+    "Method": "Index",
+    "RelativePath": "api/Auth",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CalculatorAPI.Models.AuthRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CalculatorAPI.Controllers.AuthController",
+    "Method": "RegisterUser",
+    "RelativePath": "api/Auth",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "RecuperatorCore.Models.UserAddDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CalculatorAPI.Controllers.CalculatorController",
+    "Method": "DeleteVariant",
+    "RelativePath": "api/Calculator",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "RecuperatorCore.Models.VariantDeleteDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CalculatorAPI.Controllers.CalculatorController",
+    "Method": "DuplicateVariant",
+    "RelativePath": "api/Calculator/DuplicateVariant",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "RecuperatorCore.Models.VariantLoadDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CalculatorAPI.Controllers.CalculatorController",
+    "Method": "EditVariant",
+    "RelativePath": "api/Calculator/Edit",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "RecuperatorCore.Models.VariantEditDtoModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CalculatorAPI.Controllers.CalculatorController",
+    "Method": "LoadListVariant",
+    "RelativePath": "api/Calculator/LoadListVariant{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CalculatorAPI.Controllers.CalculatorController",
+    "Method": "LoadSolveVariant",
+    "RelativePath": "api/Calculator/LoadSolveVariant",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "RecuperatorCore.Models.VariantLoadDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CalculatorAPI.Controllers.CalculatorController",
+    "Method": "LoadVariant",
+    "RelativePath": "api/Calculator/LoadVariant",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "RecuperatorCore.Models.VariantLoadDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CalculatorAPI.Controllers.CalculatorController",
+    "Method": "PutVal",
+    "RelativePath": "api/Calculator/PutIn{userid}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "KotelUtilizatorLibrary.Models.DataInputModel",
+        "IsRequired": true
+      },
+      {
+        "Name": "userid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CalculatorAPI.Controllers.CalculatorController",
+    "Method": "SaveVariant",
+    "RelativePath": "api/Calculator/Save",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "RecuperatorCore.Models.VariantAddDtoModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CalculatorAPI.Controllers.CalculatorController",
+    "Method": "SolveVal",
+    "RelativePath": "api/Calculator/Solve",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "KotelUtilizatorLibrary.Models.DataInputModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
