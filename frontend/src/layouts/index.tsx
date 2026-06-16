@@ -1,0 +1,75 @@
+import { Link, Outlet } from 'umi';
+//import styles from '../index.less';
+import { Breadcrumb, Layout, Menu, theme } from 'antd';
+import JoinLogicButton from '@/components/JoinLogicButton';
+
+const { Header, Content, Footer } = Layout;
+
+const items = [
+  {
+    key: 'home',
+    label: <Link to="/">Добавить новые данные</Link>
+  },
+  {
+    key: 'studentsList',
+    label: <Link to="/studentsList">СРД</Link>
+  },
+  // {
+  //   key: 'join',
+  //   label: <Link to="/join">Войти</Link>
+  // }
+]
+
+
+export default function LayoutPage() {
+  return (
+
+    <Layout>
+      <Header style={{ display: 'flex', alignItems: 'center' }}>
+        <div className="demo-logo" />
+        <Menu
+          theme="dark"
+          mode="horizontal"
+          defaultSelectedKeys={['2']}
+          items={items}
+          style={{ flex: 1, minWidth: 0 }}
+        />
+        <JoinLogicButton/>
+      </Header>
+      <Content style={{ padding: '0 48px' }}>
+        <Breadcrumb
+          style={{ margin: '16px 0' }}
+          items={[{ title: 'Home' }, { title: 'List' }, { title: 'App' }]}
+        />
+        <div
+          // style={{
+          //   background: colorBgContainer,
+          //   minHeight: 280,
+          //   padding: 24,
+          //   borderRadius: borderRadiusLG,
+          // }}
+        >
+          <Outlet />
+        </div>
+      </Content>
+      <Footer style={{ textAlign: 'center' }}>
+        Ant Design ©{new Date().getFullYear()} Created by Ant UED
+      </Footer>
+    </Layout>
+
+    // <div className={styles.navs}>
+    //   <ul>
+    //     <li>
+    //       
+    //     </li>
+    //     <li>
+    //       
+    //     </li>
+    //     <li>
+    //       <a href="https://github.com/umijs/umi">Github</a>
+    //     </li>
+    //   </ul>
+    //   <Outlet />
+    // </div>
+  );
+}
