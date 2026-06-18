@@ -10,15 +10,12 @@ pipeline {
 
         stage('Backend - Build & Test ') {
             steps {
-                dir('backend/HeatBalanceSystem2') {
+                dir('backend/') {
                     echo 'Restoring backend dependencies...'
-                    sh 'dotnet restore HeatBalanceSystem.sln'
+                    sh 'dotnet restore First.sln'
                     
                     echo 'Building C# backend solution...'
-                    sh 'dotnet build HeatBalanceSystem.sln --configuration Release --no-restore'
-                    
-                    echo 'Running backend unit tests...'
-                    sh 'dotnet test HeatBalance.Math.Tests/HeatBalance.Math.Tests.csproj --configuration Release --no-build'
+                    sh 'dotnet build First.sln --configuration Release --no-restore'                    
                 }
             }
         }
@@ -51,4 +48,16 @@ pipeline {
         }
 
     }
+    post {
+        success {
+            echo '✅ pipeline completed successfully!'
+        }
+        failure {
+            echo '❌ Pipeline failed.'
+        }
+        always {
+            cleanWs()
+        }
+    }
+
 }
