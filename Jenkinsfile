@@ -20,20 +20,20 @@ pipeline {
         //     }
         // }
 
-        stage('Frontend - Install & Build') {
-            steps {
-                dir('frontend') {
-                    echo 'Installing frontend dependencies...'
-                    sh 'npm ci --silent'
+        // stage('Frontend - Install & Build') {
+        //     steps {
+        //         dir('frontend') {
+        //             echo 'Installing frontend dependencies...'
+        //             sh 'npm ci --silent'
                     
-                    echo 'Running linter...'
-                    sh 'npm run lint || true'
+        //             echo 'Running linter...'
+        //             sh 'npm run lint || true'
                     
-                    echo 'Building React production bundle...'
-                    sh 'npm run build'
-                }
-            }
-        }
+        //             echo 'Building React production bundle...'
+        //             sh 'npm run build'
+        //         }
+        //     }
+        // }
 
 
         // stage('Deploy') {
