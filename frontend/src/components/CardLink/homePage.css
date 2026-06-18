@@ -1,0 +1,73 @@
+:root {
+    --block-width: 300px;
+    --block-height: 300px;
+}
+.class-block {
+    display: block;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  max-width: var(--block-width); 
+  height: var(--block-height); 
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+  transition: transform 0.1s ease-out, box-shadow 0.1s ease-out;
+  will-change: transform; 
+
+  &:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); 
+
+    .gcover-place img {
+      transform: scale(1.3);
+    }
+    
+  }
+}
+.gcover-place {
+    position: absolute;
+    width: var(--block-width);
+    height: var(--block-width);
+    object-fit: cover;
+}
+.gcover-place img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.15s ease-out;
+}
+.text-place {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 30%;
+    backdrop-filter: blur(3.1px) brightness(0.3) saturate(0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 24px;
+    box-sizing: border-box;
+    bottom: -225px;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+.class-block:hover {
+    color: rgb(255, 255, 255);
+}
+.title {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.description {
+  margin: 8px 0 0 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+}

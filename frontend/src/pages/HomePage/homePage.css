@@ -1,0 +1,38 @@
+.CaptionLn {
+    margin: 5px 0 15px;
+}
+
+.CaptionLn .CaptionCathegory {
+    font-size: 24pt;
+    margin: 6px 0 4px;
+}
+
+.CaptionLn .lineCaption {
+    width: 100%;
+    height: 2px;
+    background-color: rgb(33, 33, 33);
+    border-radius: 1px;
+}
+
+.cathegoryPlace {
+    backdrop-filter: brightness(0.95);
+    padding: 5px 20px 15px;
+    border-radius: 15px;
+    margin: 15px 0px 25px;
+}
+
+.NoFoundCP {
+    text-align: center;
+    width: 100%;
+    font-size: 16pt;
+    font-style: italic;
+}
+
+.captContainer {
+    display: flex;
+    justify-content: space-between;
+}
+.creatorCapt {
+    font-size: 16pt;
+
+}

@@ -19,7 +19,7 @@ using static RecuperatorCore.Models.DataOutputModel;
 
 namespace CalculatorAPI.Controllers
 {
-    //[Authorize]
+    [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class CalculatorController : ControllerBase

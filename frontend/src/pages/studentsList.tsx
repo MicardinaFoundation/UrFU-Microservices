@@ -27,7 +27,7 @@ const DocsPage = () => {
   };
   return (
     <div>
-      {/* <Access accessible={!access.isAuth}>
+      <Access accessible={!access.isAuth}>
         <Space>
           <span>Необходимо авторизоваться для просмотра сохранёных пользователем данных</span>
           <Button onClick={join}>Join</Button>
@@ -35,18 +35,14 @@ const DocsPage = () => {
 
       </Access>
       <Access accessible={access.isAuth}>
-        <VariantSearchForm />
+        <h2>Котёл-утилизатор: Просмотр данных</h2>
         <VariantTable />
 
+
+        <ModalViewExport data={data} advInform={false} />
         <VariantEdit />
         <VariantAdd />
-      </Access> */}
-      <VariantTable />
-
-
-      <ModalViewExport data={data} advInform={false} />
-      <VariantEdit />
-      <VariantAdd />
+      </Access>
 
     </div>
   );

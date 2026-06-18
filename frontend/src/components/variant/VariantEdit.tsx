@@ -1,6 +1,7 @@
 import { Button, Form, Input, Modal, Select } from "antd";
 import FormVariantEditor from "../FormVariantEditor";
 import { useModel } from "@umijs/max";
+import { SaveOutlined } from '@ant-design/icons';
 
 export default function (props: any) {
 
@@ -12,7 +13,7 @@ export default function (props: any) {
   return (
     <>
       <Modal
-        title="Edit students"
+        title="Редактирование"
         closable={{ 'aria-label': 'Custom Close Button' }}
         open={isModalEditOpen}
         onCancel={(handleEditCancel)}
@@ -37,7 +38,7 @@ export default function (props: any) {
           <FormVariantEditor />
           <Form.Item>
             <Button type="primary" htmlType="submit">
-              Саве
+              <SaveOutlined />
             </Button>
           </Form.Item>
 

@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "E:\\VS\\UrFU-Microservices\\backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8A7D0A10-05CB-4FB3-ABD7-E17C5CF04C83}|CalculatorAPI\\CalculatorAPI.csproj|e:\\vs\\urfu-microservices\\backend\\calculatorapi\\controllers\\calculatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A7D0A10-05CB-4FB3-ABD7-E17C5CF04C83}|CalculatorAPI\\CalculatorAPI.csproj|solutionrelative:calculatorapi\\controllers\\calculatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A7D0A10-05CB-4FB3-ABD7-E17C5CF04C83}|CalculatorAPI\\CalculatorAPI.csproj|e:\\vs\\urfu-microservices\\backend\\calculatorapi\\mathlib\\mathlib.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A7D0A10-05CB-4FB3-ABD7-E17C5CF04C83}|CalculatorAPI\\CalculatorAPI.csproj|solutionrelative:calculatorapi\\mathlib\\mathlib.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A7D0A10-05CB-4FB3-ABD7-E17C5CF04C83}|CalculatorAPI\\CalculatorAPI.csproj|e:\\vs\\urfu-microservices\\backend\\calculatorapi\\mathlib\\other\\dataoutputmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A7D0A10-05CB-4FB3-ABD7-E17C5CF04C83}|CalculatorAPI\\CalculatorAPI.csproj|solutionrelative:calculatorapi\\mathlib\\other\\dataoutputmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8A7D0A10-05CB-4FB3-ABD7-E17C5CF04C83}|CalculatorAPI\\CalculatorAPI.csproj|e:\\vs\\urfu-microservices\\backend\\calculatorapi\\models\\variantuseradddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A7D0A10-05CB-4FB3-ABD7-E17C5CF04C83}|CalculatorAPI\\CalculatorAPI.csproj|solutionrelative:calculatorapi\\models\\variantuseradddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,14 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8A7D0A10-05CB-4FB3-ABD7-E17C5CF04C83}|CalculatorAPI\\CalculatorAPI.csproj|e:\\vs\\urfu-microservices\\backend\\calculatorapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A7D0A10-05CB-4FB3-ABD7-E17C5CF04C83}|CalculatorAPI\\CalculatorAPI.csproj|solutionrelative:calculatorapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A7D0A10-05CB-4FB3-ABD7-E17C5CF04C83}|CalculatorAPI\\CalculatorAPI.csproj|e:\\vs\\urfu-microservices\\backend\\calculatorapi\\mathlib\\mathlib.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A7D0A10-05CB-4FB3-ABD7-E17C5CF04C83}|CalculatorAPI\\CalculatorAPI.csproj|solutionrelative:calculatorapi\\mathlib\\mathlib.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A7D0A10-05CB-4FB3-ABD7-E17C5CF04C83}|CalculatorAPI\\CalculatorAPI.csproj|e:\\vs\\urfu-microservices\\backend\\calculatorapi\\controllers\\calculatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A7D0A10-05CB-4FB3-ABD7-E17C5CF04C83}|CalculatorAPI\\CalculatorAPI.csproj|solutionrelative:calculatorapi\\controllers\\calculatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8A7D0A10-05CB-4FB3-ABD7-E17C5CF04C83}|CalculatorAPI\\CalculatorAPI.csproj|e:\\vs\\urfu-microservices\\backend\\calculatorapi\\data\\variantuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -41,10 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8A7D0A10-05CB-4FB3-ABD7-E17C5CF04C83}|CalculatorAPI\\CalculatorAPI.csproj|e:\\vs\\urfu-microservices\\backend\\calculatorapi\\data\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A7D0A10-05CB-4FB3-ABD7-E17C5CF04C83}|CalculatorAPI\\CalculatorAPI.csproj|solutionrelative:calculatorapi\\data\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A7D0A10-05CB-4FB3-ABD7-E17C5CF04C83}|CalculatorAPI\\CalculatorAPI.csproj|e:\\vs\\urfu-microservices\\backend\\calculatorapi\\mathlib\\other\\dataoutputmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A7D0A10-05CB-4FB3-ABD7-E17C5CF04C83}|CalculatorAPI\\CalculatorAPI.csproj|solutionrelative:calculatorapi\\mathlib\\other\\dataoutputmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8A7D0A10-05CB-4FB3-ABD7-E17C5CF04C83}|CalculatorAPI\\CalculatorAPI.csproj|e:\\vs\\urfu-microservices\\backend\\calculatorapi\\mathlib\\other\\datainputmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -161,8 +161,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 260,
-          "SelectedChildIndex": 1,
+          "DockedWidth": 153,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
@@ -174,12 +174,11 @@
               "RelativeToolTip": "CalculatorAPI\\Migrations\\20260613180414_updVariantUser.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-13T18:04:14.378Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-13T18:04:14.378Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "VariantUserAddDto.cs",
               "DocumentMoniker": "E:\\VS\\UrFU-Microservices\\backend\\CalculatorAPI\\Models\\VariantUserAddDto.cs",
               "RelativeDocumentMoniker": "CalculatorAPI\\Models\\VariantUserAddDto.cs",
@@ -192,7 +191,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "VariantAddDtoModel.cs",
               "DocumentMoniker": "E:\\VS\\UrFU-Microservices\\backend\\CalculatorAPI\\Models\\VariantAddDtoModel.cs",
               "RelativeDocumentMoniker": "CalculatorAPI\\Models\\VariantAddDtoModel.cs",
@@ -200,8 +199,7 @@
               "RelativeToolTip": "CalculatorAPI\\Models\\VariantAddDtoModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-11T19:17:55.394Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-11T19:17:55.394Z"
             },
             {
               "$type": "Document",
@@ -213,12 +211,11 @@
               "RelativeToolTip": "CalculatorAPI\\Migrations\\20260611191418_updInit.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAQwBoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-11T19:14:18.587Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-11T19:14:18.587Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "VariantUser.cs",
               "DocumentMoniker": "E:\\VS\\UrFU-Microservices\\backend\\CalculatorAPI\\Data\\VariantUser.cs",
               "RelativeDocumentMoniker": "CalculatorAPI\\Data\\VariantUser.cs",
@@ -226,8 +223,7 @@
               "RelativeToolTip": "CalculatorAPI\\Data\\VariantUser.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAqwA8AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-11T19:13:38.798Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-11T19:13:38.798Z"
             },
             {
               "$type": "Document",
@@ -239,8 +235,7 @@
               "RelativeToolTip": "CalculatorAPI\\Models\\UserAddDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-11T17:16:29.821Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-11T17:16:29.821Z"
             },
             {
               "$type": "Document",
@@ -252,12 +247,11 @@
               "RelativeToolTip": "CalculatorAPI\\Migrations\\20260611140508_init.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-11T14:05:08.8Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-11T14:05:08.8Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "User.cs",
               "DocumentMoniker": "E:\\VS\\UrFU-Microservices\\backend\\CalculatorAPI\\Data\\User.cs",
               "RelativeDocumentMoniker": "CalculatorAPI\\Data\\User.cs",
@@ -265,18 +259,17 @@
               "RelativeToolTip": "CalculatorAPI\\Data\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-11T14:03:46.157Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-11T14:03:46.157Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "CalculatorController.cs",
               "DocumentMoniker": "E:\\VS\\UrFU-Microservices\\backend\\CalculatorAPI\\Controllers\\CalculatorController.cs",
               "RelativeDocumentMoniker": "CalculatorAPI\\Controllers\\CalculatorController.cs",
               "ToolTip": "E:\\VS\\UrFU-Microservices\\backend\\CalculatorAPI\\Controllers\\CalculatorController.cs",
               "RelativeToolTip": "CalculatorAPI\\Controllers\\CalculatorController.cs",
-              "ViewState": "AgIAAKsAAAAAAAAAAAAlwKsAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAPEAAAAAAAAAAAAhwAQBAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-23T17:53:43.115Z",
               "EditorCaption": ""
@@ -291,8 +284,7 @@
               "RelativeToolTip": "CalculatorAPI\\Models\\AuthResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-28T07:20:43.061Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-28T07:20:43.061Z"
             },
             {
               "$type": "Document",
@@ -304,8 +296,7 @@
               "RelativeToolTip": "CalculatorAPI\\Models\\AuthRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-28T07:47:35.381Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-28T07:47:35.381Z"
             },
             {
               "$type": "Document",
@@ -317,8 +308,7 @@
               "RelativeToolTip": "CalculatorWeb\\Models\\CategoriesAddDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T21:59:29.128Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-10T21:59:29.128Z"
             },
             {
               "$type": "Document",
@@ -330,8 +320,7 @@
               "RelativeToolTip": "CalculatorWeb\\Views\\Home\\AddCathegory.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-10T18:40:59.691Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-10T18:40:59.691Z"
             },
             {
               "$type": "Document",
@@ -343,8 +332,7 @@
               "RelativeToolTip": "CalculatorWeb\\Models\\Auth\\AuthRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-28T07:51:54.525Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-28T07:51:54.525Z"
             },
             {
               "$type": "Document",
@@ -356,8 +344,7 @@
               "RelativeToolTip": "CalculatorAPI\\Dockerfile",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-05-14T08:37:40.615Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-14T08:37:40.615Z"
             },
             {
               "$type": "Document",
@@ -369,12 +356,11 @@
               "RelativeToolTip": "CalculatorAPI\\CalculatorAPI.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-06-06T16:56:50.335Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-06T16:56:50.335Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\VS\\UrFU-Microservices\\backend\\CalculatorAPI\\Program.cs",
               "RelativeDocumentMoniker": "CalculatorAPI\\Program.cs",
@@ -382,12 +368,11 @@
               "RelativeToolTip": "CalculatorAPI\\Program.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAAAD8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T11:52:15.561Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-10T11:52:15.561Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "AuthController.cs",
               "DocumentMoniker": "E:\\VS\\UrFU-Microservices\\backend\\CalculatorAPI\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "CalculatorAPI\\Controllers\\AuthController.cs",
@@ -395,8 +380,7 @@
               "RelativeToolTip": "CalculatorAPI\\Controllers\\AuthController.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAQwBcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-28T07:02:38.531Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-28T07:02:38.531Z"
             },
             {
               "$type": "Document",
@@ -408,8 +392,7 @@
               "RelativeToolTip": "CalculatorAPI\\Models\\AuthOptions.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-28T07:14:48.78Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-28T07:14:48.78Z"
             },
             {
               "$type": "Document",
@@ -421,8 +404,7 @@
               "RelativeToolTip": "CalculatorAPI\\docker-compose.yml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2026-05-14T08:45:56.597Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-14T08:45:56.597Z"
             },
             {
               "$type": "Document",
@@ -434,8 +416,7 @@
               "RelativeToolTip": "CalculatorWeb\\Views\\Home\\EditCathegory.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-10T18:42:16.786Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-10T18:42:16.786Z"
             },
             {
               "$type": "Document",
@@ -447,8 +428,7 @@
               "RelativeToolTip": "CalculatorWeb\\Models\\Cathegory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T18:14:45.266Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-10T18:14:45.266Z"
             },
             {
               "$type": "Document",
@@ -460,8 +440,7 @@
               "RelativeToolTip": "CalculatorWeb\\Models\\Data.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T13:06:03.699Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-10T13:06:03.699Z"
             },
             {
               "$type": "Document",
@@ -473,8 +452,7 @@
               "RelativeToolTip": "CalculatorWeb\\Views\\Home\\Cathegory.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-10T17:05:25.512Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-10T17:05:25.512Z"
             },
             {
               "$type": "Document",
@@ -486,8 +464,7 @@
               "RelativeToolTip": "CalculatorWeb\\Views\\Home\\Edit.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-17T10:39:17.192Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-17T10:39:17.192Z"
             },
             {
               "$type": "Document",
@@ -499,8 +476,7 @@
               "RelativeToolTip": "CalculatorAPI\\Data\\CalculationDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T12:01:26.876Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-10T12:01:26.876Z"
             },
             {
               "$type": "Document",
@@ -512,8 +488,7 @@
               "RelativeToolTip": "CalculatorWeb\\Models\\VariantFilterDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T15:08:17.746Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-10T15:08:17.746Z"
             },
             {
               "$type": "Document",
@@ -525,8 +500,7 @@
               "RelativeToolTip": "CalculatorWeb\\Models\\VariantEditDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T14:53:36.839Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-10T14:53:36.839Z"
             },
             {
               "$type": "Document",
@@ -538,8 +512,7 @@
               "RelativeToolTip": "CalculatorWeb\\Views\\Home\\Add.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-17T10:46:06.199Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-17T10:46:06.199Z"
             },
             {
               "$type": "Document",
@@ -551,31 +524,30 @@
               "RelativeToolTip": "CalculatorWeb\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAIAAAAAAAAAAIBZwAgAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-17T09:46:33.459Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-17T09:46:33.459Z"
             }
           ]
         },
         {
-          "DockedWidth": 140,
+          "DockedWidth": 247,
           "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 2,
               "Title": "DataOutputModel.cs",
               "DocumentMoniker": "E:\\VS\\UrFU-Microservices\\backend\\CalculatorAPI\\MathLib\\Other\\DataOutputModel.cs",
               "RelativeDocumentMoniker": "CalculatorAPI\\MathLib\\Other\\DataOutputModel.cs",
               "ToolTip": "E:\\VS\\UrFU-Microservices\\backend\\CalculatorAPI\\MathLib\\Other\\DataOutputModel.cs",
               "RelativeToolTip": "CalculatorAPI\\MathLib\\Other\\DataOutputModel.cs",
-              "ViewState": "AgIAAFUBAAAAAAAAAAAiwIcBAABKAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwCsAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-12T19:15:42.215Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "RecuperatorService.cs",
               "DocumentMoniker": "E:\\VS\\UrFU-Microservices\\backend\\CalculatorAPI\\Services\\RecuperatorService.cs",
               "RelativeDocumentMoniker": "CalculatorAPI\\Services\\RecuperatorService.cs",
@@ -583,12 +555,11 @@
               "RelativeToolTip": "CalculatorAPI\\Services\\RecuperatorService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-11T14:30:00.382Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-11T14:30:00.382Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "VariantLoadDto.cs",
               "DocumentMoniker": "E:\\VS\\UrFU-Microservices\\backend\\CalculatorAPI\\Models\\VariantLoadDto.cs",
               "RelativeDocumentMoniker": "CalculatorAPI\\Models\\VariantLoadDto.cs",
@@ -596,18 +567,17 @@
               "RelativeToolTip": "CalculatorAPI\\Models\\VariantLoadDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-11T15:20:14.551Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-11T15:20:14.551Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "MathLib.cs",
               "DocumentMoniker": "E:\\VS\\UrFU-Microservices\\backend\\CalculatorAPI\\MathLib\\MathLib.cs",
               "RelativeDocumentMoniker": "CalculatorAPI\\MathLib\\MathLib.cs",
               "ToolTip": "E:\\VS\\UrFU-Microservices\\backend\\CalculatorAPI\\MathLib\\MathLib.cs",
               "RelativeToolTip": "CalculatorAPI\\MathLib\\MathLib.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKgDAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAEcCAAAAAAAAAAAuwFACAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-06T16:59:08.892Z",
               "EditorCaption": ""
@@ -622,8 +592,7 @@
               "RelativeToolTip": "CalculatorAPI\\WeatherForecast.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAxwAAAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T13:50:15.448Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-10T13:50:15.448Z"
             },
             {
               "$type": "Document",
@@ -635,8 +604,7 @@
               "RelativeToolTip": "CalculatorWeb\\Models\\VariantEditDtoCorrect.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-01T07:44:28.17Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-01T07:44:28.17Z"
             },
             {
               "$type": "Document",
@@ -648,8 +616,7 @@
               "RelativeToolTip": "CalculatorWeb\\Models\\ErrorViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAxwAAAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T13:50:23.839Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-10T13:50:23.839Z"
             },
             {
               "$type": "Document",
@@ -661,8 +628,7 @@
               "RelativeToolTip": "CalculatorAPI\\MathLib\\Other\\DataInputModel.cs",
               "ViewState": "AgIAAIYAAAAAAAAAAAAEwBEBAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-09T15:29:50.543Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-09T15:29:50.543Z"
             }
           ]
         }

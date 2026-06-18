@@ -1,5 +1,4 @@
 .main-menu {
-  position: fixed !important;
   left: 0;
   top: 0;
   bottom: 0;
@@ -19,6 +18,15 @@
   top: 0;
   z-index: 50;
   backdrop-filter: blur(8px);
+}
+
+.main-logo {
+  width: 48px;
+  height: 48px;
+  display: contents;
+  font-size: 16pt;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 

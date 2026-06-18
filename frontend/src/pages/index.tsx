@@ -62,10 +62,11 @@ export default function HomePage() {
       <Access accessible={access.isAuth}>
 
       </Access> */}
+      <h2>Котёл-утилизатор: Расчёт/добавление данных</h2>
       <Form layout="vertical" onFinish={loadVariants}>
         <FormVariantEditor />
         <Form.Item>
-          <Button type="primary" htmlType="submit">Войти</Button>
+          <Button type="primary" htmlType="submit">Рассчитать</Button>
         </Form.Item>
       </Form>
 

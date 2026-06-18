@@ -3,6 +3,7 @@ import { Button, Divider, Form, Input, message, Modal, Popconfirm, Space, Table,
 import { Column, Pie } from "@ant-design/charts";
 import * as XLSX from 'xlsx';
 import { useEffect, useState } from "react";
+import { UserOutlined, LockOutlined, MailOutlined, SaveOutlined } from '@ant-design/icons';
 import React from "react";
 import { BoilerCalculationResponse } from "@/constants/typing";
 import { PDFDownloadLink } from "@react-pdf/renderer";
@@ -50,8 +51,8 @@ export default function (props: Props) {
 
 
                                     <Form.Item>
-                                        <Button type="primary" htmlType="submit">
-                                            Саве
+                                        <Button type="primary" htmlType="submit" title="Сохранить в базу данных для дальнейших расчётов">
+                                            <SaveOutlined />
                                         </Button>
                                     </Form.Item>
 

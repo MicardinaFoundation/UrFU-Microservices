@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Form, Input, Button, Card, Typography, message } from 'antd';
 import { UserOutlined, LockOutlined, MailOutlined, UserAddOutlined } from '@ant-design/icons';
 import './LoginPage.css';
-import { request, Access, Navigate, useAccess, useModel } from "@umijs/max";
+import { request, Access, Navigate, useAccess, useModel, history } from "@umijs/max";
 
 
 const { Title, Text, Link } = Typography;
@@ -12,7 +12,9 @@ const { Title, Text, Link } = Typography;
 export default function LoginPage() {
     const [loading, setLoading] = useState(false);
     const [isRegister, setIsRegister] = useState(false);
-
+    const access = useAccess();
+      const { refresh } = useModel('@@initialState');
+    
     // const onFinishLogin = async (values) => {
     //     setLoading(true);
     //     try {
@@ -81,9 +83,9 @@ export default function LoginPage() {
             localStorage.setItem('auth_token', response.token);
             localStorage.setItem('TAD3E7S%vCgk', response.userIndex);
             localStorage.setItem('userName', response.uName);
-            <Navigate to="/join" replace />
+            history.push('/home');
             //refresh();
-            //location.reload(true);
+            location.reload();
         }).catch((resp: any) => {
             let inf = "";
             // switch (resp.response.status) {
@@ -150,143 +152,149 @@ export default function LoginPage() {
 
             <div className="login-background" />
             <div className="login-card" >
-                <div className={`sliderWrapper ${isRegister ? "showRegister" : ''}`}>
-                    <div className='formBox'>
-                        <div className="login-header">
-                            <div className="login-logo">
-                                <UserOutlined />
+                <Access accessible={!access.isAuth}>
+                    <div className={`sliderWrapper ${isRegister ? "showRegister" : ''}`}>
+                        <div className='formBox'>
+                            <div className="login-header">
+                                <div className="login-logo">
+                                    <UserOutlined />
+                                </div>
+                                <Title level={2} className="login-title">Вход</Title>
                             </div>
-                            <Title level={2} className="login-title">Вход</Title>
-                        </div>
 
-                        <Form
-                            // name="login"
-                            initialValues={{ remember: true }}
-                            onFinish={handleLogin}
-                            layout="horizontal"
-                            size="large"
-                        >
-                            <Form.Item
-                                name="login"
-                                rules={[{ required: true, message: 'Введите имя пользователя (или почту)!' }]}
+                            <Form
+                                // name="login"
+                                initialValues={{ remember: true }}
+                                onFinish={handleLogin}
+                                layout="horizontal"
+                                size="large"
                             >
-                                <Input
-                                    prefix={<UserOutlined className="site-form-item-icon" />}
-                                    placeholder="Имя пользователя или Email"
-                                />
-                            </Form.Item>
+                                <Form.Item
+                                    name="login"
+                                    rules={[{ required: true, message: 'Введите имя пользователя (или почту)!' }]}
+                                >
+                                    <Input
+                                        prefix={<UserOutlined className="site-form-item-icon" />}
+                                        placeholder="Имя пользователя или Email"
+                                    />
+                                </Form.Item>
 
-                            <Form.Item
-                                name="password"
-                                rules={[{ required: true, message: 'Пожалуйста, введите пароль!' }]}
-                            >
-                                <Input.Password
-                                    prefix={<LockOutlined className="site-form-item-icon" />}
-                                    placeholder="Пароль"
-                                />
-                            </Form.Item>
+                                <Form.Item
+                                    name="password"
+                                    rules={[{ required: true, message: 'Пожалуйста, введите пароль!' }]}
+                                >
+                                    <Input.Password
+                                        prefix={<LockOutlined className="site-form-item-icon" />}
+                                        placeholder="Пароль"
+                                    />
+                                </Form.Item>
 
-                            <Form.Item>
-                                <Button type="primary" htmlType="submit" className="login-form-button" loading={loading} block>
-                                    Войти
-                                </Button>
-                            </Form.Item>
+                                <Form.Item>
+                                    <Button type="primary" htmlType="submit" className="login-form-button" loading={loading} block>
+                                        Войти
+                                    </Button>
+                                </Form.Item>
 
-                            <div className="login-footer">
-                                <Link onClick={() => setIsRegister(true)} className="login-link">Регистрация</Link>
-                            </div>
-                        </Form>
-                    </div>
-
-
-                    <div className='formBox'>
-                        <div className="login-header">
-                            <div className="login-logo">
-                                <UserAddOutlined />
-                            </div>
-                            <Title level={2} className="login-title">Регистрация</Title>
+                                <div className="login-footer">
+                                    <Link onClick={() => setIsRegister(true)} className="login-link">Регистрация</Link>
+                                </div>
+                            </Form>
                         </div>
 
 
-                        <Form
-                            name="register"
-                            //onFinish={onFinishRegister}
-                            layout="vertical"
-                            size="large"
-                        >
-                            <Form.Item
-                                name="username"
-                                rules={[
-                                    { required: true, message: 'Пожалуйста, введите имя пользователя!' },
-                                    { min: 3, message: 'Имя пользователя должно состоять минимум из 3 символов!' }
-                                ]}
-                            >
-                                <Input
-                                    prefix={<UserOutlined />}
-                                    placeholder="Имя пользователя"
-                                />
-                            </Form.Item>
-
-                            <Form.Item
-                                name="email"
-                                rules={[
-                                    { type: 'email', message: 'Введите корректный E-mail!' }
-                                ]}
-                            >
-                                <Input
-                                    prefix={<MailOutlined />}
-                                    placeholder="E-mail (необязательно)"
-                                />
-                            </Form.Item>
-
-                            <Form.Item
-                                name="password"
-                                rules={[
-                                    { required: true, message: 'Пожалуйста, введите пароль!' },
-                                    { min: 6, message: 'Пароль должен быть не менее 6 символов!' }
-                                ]}
-                            >
-                                <Input.Password
-                                    prefix={<LockOutlined />}
-                                    placeholder="Пароль"
-                                />
-                            </Form.Item>
-
-                            <Form.Item
-                                name="confirm"
-                                dependencies={['password']}
-                                hasFeedback
-                                rules={[
-                                    { required: true, message: 'Пожалуйста, подтвердите ваш пароль!' },
-                                    ({ getFieldValue }) => ({
-                                        validator(_, value) {
-                                            if (!value || getFieldValue('password') === value) {
-                                                return Promise.resolve();
-                                            }
-                                            return Promise.reject(new Error('Пароли не совпадают!'));
-                                        },
-                                    }),
-                                ]}
-                            >
-                                <Input.Password
-                                    prefix={<LockOutlined />}
-                                    placeholder="Подтвердите пароль"
-                                />
-                            </Form.Item>
-
-                            <Form.Item>
-                                <Button type="primary" htmlType="submit" className="login-form-button" loading={loading} block>
-                                    Зарегистрироваться
-                                </Button>
-                            </Form.Item>
-
-                            <div className="register-footer">
-                                <Link onClick={() => setIsRegister(false)} className="login-link">Войти</Link>
+                        <div className='formBox'>
+                            <div className="login-header">
+                                <div className="login-logo">
+                                    <UserAddOutlined />
+                                </div>
+                                <Title level={2} className="login-title">Регистрация</Title>
                             </div>
-                        </Form>
-                    </div>
 
-                </div>
+
+                            <Form
+                                name="register"
+                                //onFinish={onFinishRegister}
+                                layout="vertical"
+                                size="large"
+                            >
+                                <Form.Item
+                                    name="username"
+                                    rules={[
+                                        { required: true, message: 'Пожалуйста, введите имя пользователя!' },
+                                        { min: 3, message: 'Имя пользователя должно состоять минимум из 3 символов!' }
+                                    ]}
+                                >
+                                    <Input
+                                        prefix={<UserOutlined />}
+                                        placeholder="Имя пользователя"
+                                    />
+                                </Form.Item>
+
+                                <Form.Item
+                                    name="email"
+                                    rules={[
+                                        { type: 'email', message: 'Введите корректный E-mail!' }
+                                    ]}
+                                >
+                                    <Input
+                                        prefix={<MailOutlined />}
+                                        placeholder="E-mail (необязательно)"
+                                    />
+                                </Form.Item>
+
+                                <Form.Item
+                                    name="password"
+                                    rules={[
+                                        { required: true, message: 'Пожалуйста, введите пароль!' },
+                                        { min: 6, message: 'Пароль должен быть не менее 6 символов!' }
+                                    ]}
+                                >
+                                    <Input.Password
+                                        prefix={<LockOutlined />}
+                                        placeholder="Пароль"
+                                    />
+                                </Form.Item>
+
+                                <Form.Item
+                                    name="confirm"
+                                    dependencies={['password']}
+                                    hasFeedback
+                                    rules={[
+                                        { required: true, message: 'Пожалуйста, подтвердите ваш пароль!' },
+                                        ({ getFieldValue }) => ({
+                                            validator(_, value) {
+                                                if (!value || getFieldValue('password') === value) {
+                                                    return Promise.resolve();
+                                                }
+                                                return Promise.reject(new Error('Пароли не совпадают!'));
+                                            },
+                                        }),
+                                    ]}
+                                >
+                                    <Input.Password
+                                        prefix={<LockOutlined />}
+                                        placeholder="Подтвердите пароль"
+                                    />
+                                </Form.Item>
+
+                                <Form.Item>
+                                    <Button type="primary" htmlType="submit" className="login-form-button" loading={loading} block>
+                                        Зарегистрироваться
+                                    </Button>
+                                </Form.Item>
+
+                                <div className="register-footer">
+                                    <Link onClick={() => setIsRegister(false)} className="login-link">Войти</Link>
+                                </div>
+                            </Form>
+                        </div>
+
+                    </div>
+                </Access>
+                <Access accessible={access.isAuth}>
+                    <p style={{textAlign: 'center', color: 'white', fontSize: 24}}>User is authorization</p>
+                    <Navigate to="/studentsList" />
+                </Access>
             </div>
         </div>
     );

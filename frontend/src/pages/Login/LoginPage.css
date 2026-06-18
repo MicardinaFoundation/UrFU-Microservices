@@ -24,7 +24,7 @@ body {
 
 .formBox {
   width: 600px; /* Каждая форма занимает ровно ширину контейнера */
-  height: 100%;
+  max-height: 100%;
   padding: 40px;
   box-sizing: border-box;
   display: flex;
@@ -114,8 +114,8 @@ body {
 
 /* Ant Design styles overrides */
 .login-card .ant-input-affix-wrapper {
-  background-color: rgba(15, 23, 42, 0.6) !important;
-  border-color: rgba(255, 255, 255, 0.1) !important;
+  background-color: rgba(38, 56, 98, 0.6) !important;
+  border-color: rgba(236, 20, 20, 0.1) !important;
   color: #f8fafc !important;
 }
 
@@ -190,7 +190,9 @@ body {
     linear-gradient(90deg, transparent 10%, rgba(255,255,255,0.05) 15%, transparent 25%);
   filter: blur(15px);
 }
-
+.site-form-item-icon {
+    color: whitesmoke;
+}
 
 .vista-floor {
   position: absolute;

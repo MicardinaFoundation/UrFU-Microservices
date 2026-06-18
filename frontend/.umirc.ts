@@ -2,19 +2,23 @@ import { defineConfig } from "umi";
 
 export default defineConfig({
   esbuildMinifyIIFE: true,
-  routes: [
+  // layout: {
+  //       title: 'Project: Nektarynki Tesco', 
+  //         },
+ routes: [
     {
       path: '/',
       wrappers: ['@/components/ProtectedRouteSect'],
       routes: [
-        { path: "/", component: "@/pages/index" },
-        { path: "/studentsList", component: "@/pages/studentsList" },
+        { path: "/calculateKU", component: "@/pages/index"},
+        { path: "/kotelList", component: "@/pages/studentsList"},
         //{ path: "/join", component: "@/pages/join" },
 
       ]
     },
-    { path: "/join", component: "Login/LoginPage", layout: false },
-    { path: "/*", component: "404" }
+    { path: "/join", component: "Login/LoginPage", layout: false, title: 'Вход'},
+    { path: "/home", component: "@/pages/HomePage/homePage", title: 'Главная страница'},
+    { path: "/*", component: "404", title: '404 :с'}
 
 
   ],

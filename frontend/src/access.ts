@@ -1,6 +1,6 @@
 export default function access(initialState: any){
     const {currentUser} = initialState || {};
-    const token = localStorage.getItem('token');
+    const token = localStorage.getItem('auth_token');
 
 
     return {
