@@ -8,17 +8,17 @@ pipeline {
         }
 
 
-        stage('Backend - Build & Test ') {
-            steps {
-                dir('backend/') {
-                    echo 'Restoring backend dependencies...'
-                    sh 'dotnet restore First.sln'
+        // stage('Backend - Build & Test ') {
+        //     steps {
+        //         dir('backend/') {
+        //             echo 'Restoring backend dependencies...'
+        //             sh 'dotnet restore First.sln'
                     
-                    echo 'Building C# backend solution...'
-                    sh 'dotnet build First.sln --configuration Release --no-restore'                    
-                }
-            }
-        }
+        //             echo 'Building C# backend solution...'
+        //             sh 'dotnet build First.sln --configuration Release --no-restore'                    
+        //         }
+        //     }
+        // }
 
         stage('Frontend - Install & Build') {
             steps {
@@ -36,16 +36,16 @@ pipeline {
         }
 
 
-        stage('Deploy') {
-            when {
-                branch 'main'
-            }
-            steps {
-                echo 'Deploying application stack via Docker Compose...'
-                sh "docker compose down --remove-orphans || true"
-                sh "docker compose up -d"
-            }
-        }
+        // stage('Deploy') {
+        //     when {
+        //         branch 'main'
+        //     }
+        //     steps {
+        //         echo 'Deploying application stack via Docker Compose...'
+        //         sh "docker compose down --remove-orphans || true"
+        //         sh "docker compose up -d"
+        //     }
+        // }
 
     }
     post {
